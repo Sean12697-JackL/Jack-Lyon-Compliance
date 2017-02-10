@@ -1,0 +1,43 @@
+h1, h2, h3 {
+    font-family: 'Amatic SC', cursive;
+    color: #e1b178;
+}
+
+h1 {
+    font-size: 3em;
+    padding-top: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    ;
+}
+
+p, li, a {
+    font-family: 'Josefin Slab', serif;
+    color: #e5cfb1;
+    padding: 30px;
+}
+
+body {
+    background-color: #f6d5dc;
+    text-align: center;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #9a5564;
+}
+
+article {
+    width: 80%;
+    padding: 10px 0;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+article:hover {
+    background-color: rgba(255,255,255,0.05);
+    transition: 0.2s;
+}
