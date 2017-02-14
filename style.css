@@ -1,43 +1,236 @@
-h1, h2, h3 {
-    font-family: 'Amatic SC', cursive;
-    color: #e1b178;
+h1, h2, h3, h4, h5 {
+	font-family: 'Raleway', cursive;
+	margin: 15px 0px 0px 0px;
 }
 
 h1 {
-    font-size: 3em;
-    padding-top: 40px;
+	margin: 40px 0px;
 }
 
-h2 {
-    font-size: 2em;
-    ;
+p, a, li, small {
+	font-family: 'Open Sans', sans-serif;
+	margin: 10px 0px 15px 0px;
 }
 
-p, li, a {
-    font-family: 'Josefin Slab', serif;
-    color: #e5cfb1;
-    padding: 30px;
+li a {
+	text-decoration: none;
+}
+
+a {
+	color: #96c332;
+}
+
+a:hover {
+	color: #b9e753;
+}
+
+/*Centering text*/
+.centertext, header, nav ul, footer {
+	text-align: center;
 }
 
 body {
-    background-color: #f6d5dc;
+	margin: 0px;
+	background-color: black;
+	color: white;
     text-align: center;
 }
 
-section {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #9a5564;
+main {
+	background-color: #4e4e5b;
+}
+
+header, footer {
+	background-color: #31313b;
+}
+
+.middlecontainer, nav {
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav, main, footer, header {
+	padding: 5px 0px;
+}
+
+nav {
+	border-top: dashed 1px rgba(255,255,255,0.5);
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	width: 100%;
+	padding: 20px 40px;
+	margin: 0 auto;
+}
+
+nav li:hover, nav li:focus {
+	border-bottom: solid 2px #96c332;	
+	background-color: rgba(255,255,255,0.1);
+	transition: 0.2s;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+.image {
+    background-color: crimson;
+	/* background: url(banner.jpg);
+	background-size: cover;
+    background-repeat: no-repeat; */
+}	
+
+.opacity {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.largepadding {
+	padding: 70px 0px;
+}
+
+.profile {
+	width: 200px;
+	height: 200px;
+	transform: rotateY(0deg);
+	transition: 1s;
+}
+
+.profile:hover {
+	transform: rotateY(360deg);
+	transition: 1s;
+	filter: brightness(0.6);
+}
+
+.icons {
+	width: 100px;
+	height: 100px;
+	margin-top: 40px;
+}
+
+.socialicons img {
+	width: 20px;
+	height: 20px;
+	padding: 5px 8px;
+	transition: 0.4s;
+}
+
+.socialicons img:hover, .socialicons img:focus {
+	transform: scale(1.4);
+	transition: 0.4s;
+}
+
+nav, ul, li {
+	/*Chrome Reset*/
+    -webkit-padding-start: 0px;
+	/*Firefox Reset*/
+    -moz-padding-start: 0px;
+	/*IE Reset*/
+    -ms-padding-start: 0px;
+	/*Opera Reset*/
+    -o-padding-start: 0px;
+}
+
+div[class*="column"], div[class*="smallholder"] {
+    display: table-cell;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+div[class*="column"]:hover, div[class*="smallholder"]:hover {
+    background-color: rgba(255,255,255,0.1);
+	transition: 0.5s;
+}
+
+div[class*="column"] {
+	width: 25%;
+	transition: 0.5s;
+}
+
+div[class*="smallholder"] {
+	width: 10%;
+	transition: 0.5s;
 }
 
 article {
-    width: 80%;
-    padding: 10px 0;
-    margin: 0 auto;
-    transition: 0.2s;
+    display: table;
 }
 
-article:hover {
-    background-color: rgba(255,255,255,0.05);
-    transition: 0.2s;
+article img {
+	width: 90%;
+	height: auto;
+	border: solid 4px #31313b;
+	margin: 15px auto 0px auto;
+	transition: 0.2s;
+}
+
+article a:hover img {
+	border: solid 4px #96c332;
+	filter: brightness(0.9);
+	transition: 0.2s;
+}
+
+.up {
+    height: 6px;
+    margin: 0px 15px 3px 15px;
+}
+
+/*Naviation Fix*/
+@media screen and (max-width: 970px) {
+    
+nav, ul {
+	width: auto;
+	/*Chrome Reset*/
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+	/*Firefox Reset*/
+    -moz-padding-start: 0px;
+    -moz-margin-before: 0px;
+    -moz-margin-after: 0px;
+	/*IE Reset*/
+    -ms-padding-start: 0px;
+    -ms-margin-before: 0px;
+    -ms-margin-after: 0px;
+	/*Opera Reset*/
+    -o-padding-start: 0px;
+    -o-margin-before: 0px;
+    -o-margin-after: 0px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: block;
+	margin: 0 auto;
+	width: auto;
+}
+
+nav, header {
+	width: 100%;
+}
+
+nav{
+	padding: 0px;
+	}
+	
+h1 {
+	padding: 0px 20px;
+}
+
+}
+
+
+@media screen and (max-width: 850px) {
+
+div[class*="column"], div[class*="smallholder"] {
+    display: block;
+    width: 90%; 
+	padding: 10px;
+	border-bottom: dashed 1px rgba(255,255,255,0.5);
+}
+
 }
